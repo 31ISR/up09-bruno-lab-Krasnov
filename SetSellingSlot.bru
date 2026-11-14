@@ -1,0 +1,24 @@
+meta {
+  name: SetSellingSlot
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://api.kitek-pg.ru/api/marketplace/items
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+    "title": "NekoArc Dakimakura",
+    "description": "Дакимакура с персонажем НекоАрк в заводской упаковке по цене производителя",
+    "price": 7500,
+    "imageUrl": "https://example.com/NekoArc-Dakimakura.jpg"
+  }
+}
